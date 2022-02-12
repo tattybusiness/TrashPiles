@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>TrashPiles</title>
 </head>
 <body>
@@ -18,8 +20,8 @@
             <a href="#" class="button myButton">Mint</a>
         </div>
         <div class="main-container is-flex is-flex-direction-column is-align-items-center is-justify-content-space-between">
-            <img src="assets/logo.png" alt="logo" class="logo">
-            <img src="assets/displayImg.png" alt="nft" class="displayImg">
+            <img src="assets/logo.png" alt="logo" class="logo animate__animated animate__fadeInDown">
+            <img src="assets/displayImg.png" alt="nft" class="displayImg animate__animated animate__fadeIn animate__slow">
         </div>
     </div>
 
@@ -30,17 +32,68 @@
                 <h1 class="is-size-2">Learn something about us</h1>
                 <p class="is-size-5">
                     Our core team comes from a very outdoorsy background. We are avid fishermen who have spent countless hours on the water. 
-                    The amount of trash and pollution that we see is both saddening and alarming at the same time.
+                    The amount of trash and pollution that we have seen is both saddening and alarming.
                 </p>
                 <p class="is-size-5">
-                    We truly wanted to develop a project that was both fun and could benefit our planet. In doing so, we have decided to make a sizeable donation 
-                    to a charity that is going to make a true difference in the world. We searched far and wide for a reputable charity to donate funds 
-                    to once raised and are hoping to have a partnership prior to our minting date!
+                    We wanted to develop a project that was both fun and beneficial for our planet. In doing so, we have decided to make a sizeable donation to an ocean cleanup 
+                    charity that is going to make a true difference in the world.
                 </p>
-                <a href="https://discord.gg/daGCZaZ22y" class="button myButton dark is-uppercase mt-5">join our discord</a>
+                <a href="https://discord.gg/daGCZaZ22y" class="button myButton dark is-uppercase mt-5" style="z-index: 200;">join our discord</a>
             </div>
             <div class="right">
-                <img src="assets/NFT1.png" alt="nft1" class="nft1">
+                <img src="assets/NFT1.png" alt="nft1" class="nft1 is-hidden-touch" data-aos="zoom-in-left">
+            </div>
+        </div>
+    </section>
+
+    <!-- Utility Overview -->
+    <section class="section utility is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+        <h1 class="is-size-2 heading">
+            trash to treasure utility overview
+        </h1>
+        <div class="is-flex is-align-items-center is-justify-content-center is-flex-wrap-wrap">
+            <div class="left" data-aos="fade-right">
+                <img src="assets/utility1.jpg" alt="utility1" class="utilityImg">
+            </div>
+            <div class="right" data-aos="fade-left">
+                <p class="is-size-5">
+                    TrashPile holders will be able to participate in the trash to treasure recycle events each month
+                </p>
+                <p class="is-size-5">
+                    Each month, a small set of treasure keys will be available to mint.
+                </p>
+                <p class="is-size-5">
+                    These treasure keys will allow TrashPile holders to burn their TrashPile and their trasure key to create a very limited TrashPile NFT.
+                </p>
+                <p class="is-size-5">
+                    TreasurePile NFTs will be of the highest quality 3D artwork.
+                </p>
+                <p class="is-size-5">
+                    Each month will highlight an area of the world that will be the focus of the trash cleanup donations.
+                </p>
+            </div>
+        </div>
+        <div class="is-flex is-align-items-center is-justify-content-space-between is-flex-wrap-wrap">
+            <div class="left is-hidden-desktop" data-aos="fade-left">
+                <img src="assets/utility2.jpg" alt="utility2" class="utilityImg2">
+            </div>
+            <div class="right" data-aos="fade-right">
+                <p class="is-size-5">
+                    A local artist from the area of highlight will create unique artwork for the limited TreasurePile collection.
+                </p>
+                <p class="is-size-5">
+                    As more months pass and original TrashPiles become TreasurePiles, the scarcity of TrashPiles 
+                    will increase and the TreasurePiles they become will be of extremely limited supply, unique to the region and month they were created.
+                </p>
+                <p class="is-size-5">
+                    Money raised from the minting of each month’s treasure keys will be donated to a trash cleanup charity of the communities choice.
+                </p>
+                <p class="is-size-5">
+                    Much like TrashPiles, TreasurePiles will have built in royalties on secondary transactions to donate funds to charity forever.
+                </p>
+            </div>
+            <div class="left is-hidden-touch" data-aos="fade-left">
+                <img src="assets/utility2.jpg" alt="utility2" class="utilityImg2">
             </div>
         </div>
     </section>
@@ -52,6 +105,10 @@
         particlesJS.load('particles-js', './particlesjs-config.json', function() {
             console.log('callback - particles.js config loaded');
         });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
