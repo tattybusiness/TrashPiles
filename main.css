@@ -27,6 +27,13 @@ body {
 	}
 }
 
+#particles-js {
+    position: absolute;
+    top: 1000px;
+    height: 100%;
+    z-index: 1;
+}
+
 h1 {
     font-family: 'Bangers', cursive;
     color: #fff;
@@ -51,12 +58,26 @@ p {
     font-weight: 500;
     border: none;
     color: #000 !important;
+    z-index: 200;
 }
 .myButton:hover {
     background-color: #66B3F2;
     border: none;
     transition: 0.3s ease;
     color: #fff !important;
+}
+
+.myButton.dark {
+    color: #fff !important;
+    background-color: #3D6D95;
+    padding: 1.5rem 2rem;
+    border-radius: 0px;
+    z-index: 200;
+}
+.myButton.dark:hover {
+    background-color: #fff;
+    color: #000 !important;
+    transition: 0.3s ease;
 }
 
 /* header */
@@ -79,10 +100,29 @@ p {
     max-width: 625px;
 }
 
+/* about */
+.about .left p {
+    max-width: 750px;
+    margin: 1rem 0rem;
+}
+.about .right img {
+    max-width: 700px;
+}
+
 /* media queries */
 @media only screen and (max-width: 1024px) {
     .header {
         background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .about .right img {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .about .is-flex {
+        justify-content: center !important;
     }
 }
 
@@ -100,5 +140,8 @@ p {
 @media only screen and (max-width: 500px) {
     .main-container {
         min-height: 40vw;
+    }
+    .about .right img {
+        max-width: 300px;
     }
 }
