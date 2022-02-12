@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+    <title>TrashPiles</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="buttons is-flex is-justify-content-flex-end pt-5 pr-6">
+            <a href="#" class="button myButton">Mint</a>
+        </div>
+        <div class="main-container is-flex is-flex-direction-column is-align-items-center is-justify-content-space-between">
+            <img src="assets/logo.png" alt="logo" class="logo">
+            <img src="assets/displayImg.png" alt="nft" class="displayImg">
+        </div>
+    </div>
+
+    <!-- About Us -->
+    <section class="section about">
+        <div class="is-flex">
+            <div class="left">
+                <h1 class="is-size-3">Learn something about us</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <div id="particles-js"></div>
+    <script src="/node_modules/particles.js/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', './particlesjs-config.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+</body>
+</html>
