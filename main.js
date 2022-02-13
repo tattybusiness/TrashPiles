@@ -87,6 +87,7 @@ const toggler5 = document.querySelector("#toggle-five");
 const toggle5 = () => {
     toggler5.classList.toggle("is-active");
     toggler5.classList.toggle("bigMargin");
+    toggler5.classList.toggle("biggerMarginMobile");
 }
 
 dropFive.addEventListener("click", toggle5);

@@ -271,6 +271,9 @@ p {
 .bigMargin {
     margin-bottom: 7rem;
 }
+.biggerMarginMobile {
+    margin-bottom: 10rem !important;
+}
 
 /* footer */
 .myFooter {
@@ -441,6 +444,10 @@ p {
     .columns .column img {
         max-width: 100%;
     }
+    .biggerMarginMobile {
+    margin-bottom: 10rem !important;
+    }
+
 }
 
 @media only screen and (max-width: 605px) {
@@ -470,4 +477,20 @@ p {
     .dropdown h1 {
         font-size: 0.8rem !important;
     }
+}
+
+
+/* changes */
+.floating {
+    position: absolute;
+    top: 2500px;
+    left: -80px;
+    max-width: 300px;
+}
+
+.floating2 {
+    position: absolute;
+    top: 2500px;
+    right: -80px;
+    max-width: 300px;
 }
