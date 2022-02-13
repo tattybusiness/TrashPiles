@@ -272,6 +272,20 @@ p {
     margin-bottom: 7rem;
 }
 
+/* footer */
+.myFooter {
+    background-color: #3D6D95;
+    padding: 2rem 1rem;
+}
+.myFooter a {
+    color: #fff !important;
+    font-family: 'Bangers', cursive;
+    z-index: 300;
+}
+.myFooter .icons a {
+    max-width: 40px;
+}
+
 /* media queries */
 @media only screen and (max-width: 1600px) {
     .left .myCard {
