@@ -237,6 +237,41 @@ p {
     max-width: 400px;
 }
 
+/* FAQ */
+.dropdown {
+    margin-bottom: 2rem;
+}
+.dropdown-content{
+    padding: 2rem;
+    width: 70vw;
+    background: #3D6D95;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 10rem;
+}
+.dropdown-trigger {
+    z-index: 200;
+    width: 70vw;
+}
+.dropdown-trigger button {
+    width: 100%;
+    padding: 2rem;
+    background: #66B3F2;
+    border: none;
+    border-radius: 0px;
+    color: #fff;
+}
+.dropdown-trigger button:focus {
+    color: #fff;
+}
+.dropdown-trigger button:hover {
+    color: #fff;
+}
+.bigMargin {
+    margin-bottom: 7rem;
+}
+
 /* media queries */
 @media only screen and (max-width: 1600px) {
     .left .myCard {
@@ -386,6 +421,12 @@ p {
         margin-top: 1rem !important;
         margin-bottom: 1rem !important;
     }
+    .dropdown h1 {
+        font-size: 1.3rem !important;
+    }
+    .columns .column img {
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 605px) {
@@ -397,6 +438,9 @@ p {
     .displayImg {
         max-width: 100%;
     }
+    .dropdown h1 {
+        font-size: 1rem !important;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -405,5 +449,11 @@ p {
     }
     .about .right img {
         max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .dropdown h1 {
+        font-size: 0.8rem !important;
     }
 }
