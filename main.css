@@ -6,10 +6,12 @@
 
 html {
     overflow-x: hidden !important;
+    scroll-behavior: smooth;
 }
 
 body {
-	background: linear-gradient(5deg, #000000, #0A416E, #449EE7, #66B3F2);
+	/* background: linear-gradient(5deg, #000000, #0A416E, #449EE7, #66B3F2); */
+	background: linear-gradient(5deg, #000000, #000000,#000000, #5199d3,#5199d3, #66B3F2);
 	background-size: 400% 400%;
 	animation: gradient 8s ease infinite;
 	min-height: 100vh;
@@ -297,6 +299,15 @@ p {
     .right .myCard {
         max-width: 400px;
     }
+    .about .left p {
+        font-size: 0.8rem !important;
+    }
+    .about .left {
+        max-width: 500px;
+    }
+    .about .right img {
+        max-width: 400px;
+    }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -485,12 +496,19 @@ p {
     position: absolute;
     top: 2500px;
     left: -80px;
-    max-width: 300px;
+    max-width: 150px;
 }
 
 .floating2 {
     position: absolute;
     top: 2500px;
     right: -80px;
-    max-width: 300px;
+    max-width: 150px;
+}
+
+/* navigation */
+.navbar .navbar-start a {
+    color: #3D6D95 !important;
+    font-family: 'Bangers', cursive;
+    font-size: 1.3rem !important;
 }

@@ -16,10 +16,30 @@
 <body>
     <!-- Header -->
     <div class="header">
-        <div class="buttons is-flex is-justify-content-flex-end pt-5 pr-6">
-            <a href="#" class="button myButton">Mint</a>
-            <a href="assets/TrashPiles_Whitepaper_1.pdf" target="_blank" class="button myButton">Whitepaper</a>
-        </div>
+        <nav class="navbar is-transparent" role="navigation" aria-label="main navigation" style="background: transparent; max-width: 100%;">
+            <div class="navbar-brand">          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu" style="background: transparent; box-shadow: none;">
+                <div class="navbar-start">
+                    <a href="#about" class="navbar-item">ABOUT</a>
+                    <a href="#roadmap" class="navbar-item">ROADMAP</a>
+                    <a href="#team" class="navbar-item">OUR TEAM</a>
+                    <a href="#faq" class="navbar-item">FAQ</a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a href="#" class="button myButton">Mint</a>
+                        <a href="assets/TrashPiles_Whitepaper_1.pdf" target="_blank" class="button myButton ml-3">Whitepaper</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <div class="main-container is-flex is-flex-direction-column is-align-items-center is-justify-content-space-between">
             <img src="assets/logo.png" alt="logo" class="logo animate__animated animate__fadeInDown">
             <img src="assets/displayImg.png" alt="nft" class="displayImg animate__animated animate__fadeIn animate__slow">
@@ -27,7 +47,7 @@
     </div>
 
     <!-- About Us -->
-    <section class="section about">
+    <section id="about" class="section about">
         <div class="is-flex is-align-items-center is-justify-content-space-between is-flex-wrap-wrap">
             <div class="left">
                 <h1 class="is-size-2">Learn something about us</h1>
@@ -48,7 +68,7 @@
     </section>
 
     <!-- Utility Overview -->
-    <section class="section utility is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+    <section id="utility" class="section utility is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
         <img src="assets/floating/bottle.png" alt="bottle" class="floating is-hidden-touch">
         <h1 class="is-size-2 heading">
             trash to treasure utility overview
@@ -102,7 +122,7 @@
     </section>
 
     <!-- Timeline Header -->
-    <section class="section headerT is-flex is-justify-content-center my-6">
+    <section id="timelinenav" class="section headerT is-flex is-justify-content-center my-6">
         <h1 class="is-size-2">
             The Roadmap
         </h1>
@@ -187,7 +207,7 @@
     </section>
 
     <!-- Meet The Team -->
-    <section class="section team">
+    <section id="team" class="section team">
         <div class="mainText is-flex is-justify-content-center">
             <h1 class="is-size-2 mb-6">Meet the team</h1>
         </div>
@@ -232,7 +252,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="section FAQ mt-6">
+    <section id="faq" class="section FAQ mt-6">
         <div class="is-flex is-flex-direction-column is-align-items-center">
             <h1 class="is-size-2 mb-6">
                 QUESTIONS? FAQ
@@ -356,16 +376,16 @@
                 <h1 class="is-size-4">
                     navigation
                 </h1>
-                <a href="#" class="is-size-5">
+                <a href="#about" class="is-size-5">
                     about
                 </a>
-                <a href="#" class="is-size-5">
+                <a href="#timelinenav" class="is-size-5">
                     roadmap
                 </a>
-                <a href="#" class="is-size-5">
+                <a href="#team" class="is-size-5">
                     our team
                 </a>
-                <a href="#" class="is-size-5">
+                <a href="#faq" class="is-size-5">
                     faq
                 </a>
             </div>
